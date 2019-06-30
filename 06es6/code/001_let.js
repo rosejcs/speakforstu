@@ -43,18 +43,26 @@
 // tempLet(); // Uncaught ReferenceError: Cannot access 'a' before initialization
 
 /**
- * 代码块锁定变量
+ * 暂时性死区 TDZ
  */
-var tmp = 10;
-if(1) {
-  tmp = '123'
-  console.log(tmp)
+// var tmp = 10;
+// if(1) {
+//   tmp = '123'
+//   console.log(tmp)
 
-  let tmp
-  console.log(tmp)
+//   let tmp
+//   console.log(tmp)
 
-  tmp = 123
-  console.log(tmp)
+//   tmp = 123
+//   console.log(tmp)
+// }
+
+// function bar(x = y, y = 2) {
+//   return [x, y]
+// }
+// bar() // 报错 Uncaught ReferenceError: Cannot access 'y' before initialization
+
+function bar(x = 2, y = x) {
+  return [x,y]
 }
-
-
+bar()
