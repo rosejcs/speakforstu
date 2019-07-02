@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flex</title>
+<style>
+
+  .parent {
+    width: 400px;height: 400px;
+    background: #cecece;
+  }
+  .kid {
+    width: 100px;height: 100px;
+    background: pink;
+  }
+
+  /* 方法3 */
+  .parent { display: inline-block; }
+  .parent::after {
+    content:"";
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
+  .kid { display:inline-block;vertical-align: middle; }
+</style>
+</head>
+<body>
+  <div class="parent">parent
+    <div class="kid">kid</div>
+  </div>
+</body>
+</html>
