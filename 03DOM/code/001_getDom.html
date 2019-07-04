@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+  <div id="pId">
+    this is a parent div
+    <div class="kClass kid">this is a kid div</div>
+    <div class="kid">this is a kid div</div>
+  </div>
+
+  <script>
+    // 获取所有的div
+    let divArr = document.getElementsByTagName('div');
+    // 或querySelectorAll写法
+    // let divArr = document.querySelectorAll('div'); 
+
+    // 获取id为"pId"的div元素
+    let pId = document.querySelector('#pId');
+
+    // 获取class为"kClass"的div元素
+    let kClass = document.querySelector( '.kClass' );
+
+    // 获取class为"kid"的div元素数组
+    let kidArr = document.querySelectorAll('.kid');
+    // 也可以通过pId的子元素来获取
+    // let kidArr = pId.children;
+
+    // 获取pId元素下的第一个标签元素
+    let fSon = pId.children[0];
+    
+
+  
+  
+  </script>
+</body>
+</html>
