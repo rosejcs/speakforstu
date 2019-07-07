@@ -52,8 +52,8 @@ const getJSON = function(url) {
   return promise;
 }
 
-getJSON('/post.json').then(function(json) {
-  console.log('Contents:' + json);
+getJSON('./post.json').then(function(json) {
+  console.log('Contents:' + json[0].name);
 },function(error) {
   console.log('error：', error);
 });
@@ -70,3 +70,13 @@ p2
   .then(result => console.log(result))
   .catch(error => console.log(error))
 // Error: fail
+
+
+new Promise((resolve, reject) => {
+  resolve(1);
+  console.log(2);
+}).then(r => {
+  console.log(r);
+});
+// 2  同步
+// 1  异步
