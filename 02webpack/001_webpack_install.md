@@ -27,8 +27,8 @@ npm install webpack webpack-cli --save-dev
 配置webpack.config.js
 
 ```
-import path from 'path'
-import HtmlWebpackPlugin from 'html-webpack-plugin'
+const path  = require('path')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 // webpack只能处理js文件
 module.exports = {

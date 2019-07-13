@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+ul,ol {
+  list-style: none;
+}
+
+.container {
+  width: 1100px;
+  margin: 0 auto;
+  background: #cecece;
+}
+
+.container .car-wrap {
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  border: 1px solid #000;
+  overflow:hidden;
+  
+}
+
+.container .car-wrap .carousel {
+  width: 700%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.container .car-wrap .carousel .carousel-item{
+  width: 14.286%;
+}
+
+.container .car-wrap .carousel .carousel-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* 轮播动画样式 */
+.carTrans {
+  transition: transform 1s linear;
+}
+.carTrans0 {
+  transform: translateX(0);
+}
+/* 一张图的偏移量 */
+.carTrans1 {
+  transform: translateX(-14.286%);
+}
+/* 两张图的偏移量 */
+.carTrans2 {
+  transform: translateX(-28.571%);
+}
+/* 三张图的偏移量 */
+.carTrans3 {
+  transform: translateX(-42.857%);
+}
+/* 四张图的偏移量 */
+.carTrans4 {
+  transform: translateX(-57.143%);
+}
+/* 五张图的偏移量 */
+.carTrans5 {
+  transform: translateX(-71.429%);
+}
+/* 六张图的偏移量 */
+.carTrans6 {
+  transform: translateX(-85.714%);
+}
+/* 七张图的偏移量 */
+.carTrans7 {
+  transform: translateX(-100%);
+}
