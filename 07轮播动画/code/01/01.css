@@ -17,8 +17,10 @@ ul,ol {
   width: 400px;
   height: 400px;
   margin: 0 auto;
-  border: 1px solid #000;
+  border: 4px solid #000;
+  box-sizing: border-box;
   overflow:hidden;
+  position: relative;
   
 }
 
@@ -36,6 +38,60 @@ ul,ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+/* 指示器 */
+.container .car-wrap .indecators {
+  width: 200px;
+  height: 30px;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+}
+.container .car-wrap .indecators .indecator-item{
+  width: 20px;
+  height: 20px;
+  background-color: rgba(123,255,123,.9);
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* 指示器选中 */
+.active {
+  background: yellow !important;
+}
+/* 控制器 */
+.container .car-wrap .controllers {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 40px;
+  height: 60px;
+  background: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+.container .car-wrap .controllers::after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border-left: 5px solid #fff;
+  border-top: 5px solid #fff;
+  transform: rotateZ(-45deg);
+  position: absolute;
+  top: 30%;
+  left: 30%;
+}
+
+.container .car-wrap .controllers.nextItem {
+  left: initial;
+  right: 0;
+}
+
+.container .car-wrap .controllers.nextItem::after {
+  transform: rotateZ(135deg);
+  left: initial;
+  right: 30%;
 }
 
 
@@ -71,6 +127,6 @@ ul,ol {
   transform: translateX(-85.714%);
 }
 /* 七张图的偏移量 */
-.carTrans7 {
+/* .carTrans7 {
   transform: translateX(-100%);
-}
+} */
