@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+ul, ol {
+  list-style:none;
+}
+a {
+  text-decoration: none;
+}
+html {
+  font-size: 16px;
+}
+.wrap {
+  width: 900px;
+  margin: 0 auto;
+}

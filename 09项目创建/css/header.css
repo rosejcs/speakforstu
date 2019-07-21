@@ -1,0 +1,77 @@
+.header-container {
+  width: 100%;
+  background: #eee;
+}
+
+.header-container .top-banner{
+  width: 100%;
+  height: 32px;
+  background: #ececec;
+  font-size: 0.75rem;
+}
+.header-container .top-banner .banner-left {
+  /* width: 225px; */
+  height: 32px;
+  float: left;
+}
+.header-container .top-banner .banner-left .banner-logo {
+  float: left;
+  line-height: 32px;
+  display: flex;
+  
+}
+.header-container .top-banner .banner-left .banner-logo .icon-3 {
+  width: 20px;
+  height: 16px;
+  float: left;
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  margin-right: .1rem;
+}
+.header-container .top-banner .banner-left .banner-logo .icon-3 span{
+  width: 60%;
+  height: 1px;
+  background: #aaa;
+  display: block;
+
+}
+.header-container .top-banner .banner-left .notice {
+  float: left;
+  margin-left: 1rem;
+  line-height: 32px;
+  padding-left: 1.2rem;
+  background-image: url(../img/sprite.scss.png);
+  background-repeat: no-repeat;
+  background-position: -121px -16px;
+  background-size: 100%;
+  color: #e22;
+  font-size: .6rem;
+}
+
+
+
+
+.header-container .top-banner{}
+.header-container .top-banner{}
+.header-container .top-banner{}
+.header-container .top-banner{}
+.header-container .top-banner{}
+.header-container .top-banner{}
+.header-container .top-banner{}
+.header-container .top-banner{}
+.header-container {}
+.header-container {}
+.header-container {}
+.header-container {}
+.header-container {}
+.header-container {}
+.header-container {}
+.header-container {}
+.header-container {}
+.header-container {}
+.header-container {}
+.header-container {}
+.header-container {}
